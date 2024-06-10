@@ -8,7 +8,7 @@ def index():
 
 @app.route('/weather/<city>')
 def get_weather(city):
-    api_key = '8762bbe33f2e63f31e4e2b55e4d07d91'
+    api_key = 'API KEY'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     response = requests.get(url)
     if response.status_code == 200:
