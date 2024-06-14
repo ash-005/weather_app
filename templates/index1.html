@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #edafe9;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #bd6db1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(111, 91, 91, 0.1);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            background-color: #4a5464;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #d942f7;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .weather-info {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #120b0e;
+            background-color: #934586;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather API</h1>
+        <form action="/weather" method="GET">
+            <input type="text" name="city" placeholder="Enter city name">
+            <input type="submit" value="Get Weather">
+        </form>
+    </div>
+    <div class="container">
+        <h1>Weather Information</h1>
+        <div class="weather-info">
+            <h3>Weather in {{ city }}</h3>
+            <p>Description: {{ weather_desc }}</p>
+            <p>Temperature: {{ temperature }}K</p>
+            <p>Humidity: {{ humidity }}%</p>
+            <p>Wind Speed: {{ wind_speed }}%</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

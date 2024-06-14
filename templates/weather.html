@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .weather-info {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #95ee96;
+            background-color: #824747;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Information</h1>
+        <div class="weather-info">
+            <h3>Weather in {{ city }}</h3>
+            <p>Description: {{ weather_desc }}</p>
+            <p>Temperature: {{ temperature }}K</p>
+            <p>Humidity: {{ humidity }}%</p>
+            <p>Wind Speed: {{ wind_speed }}%</p>
+        </div>
+    </div>
+</body>
+
+</html>
