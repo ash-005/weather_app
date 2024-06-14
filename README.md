@@ -3,6 +3,7 @@
 This Weather App is a Flask-based web application that allows users to get current weather information for a specified location. It fetches weather data from an external API and displays it to the user.
 
 ## Project Structure
+```
 weather_app/
 ├── templates/
 │   ├── index.html
@@ -11,6 +12,7 @@ weather_app/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
 
 ## Features
